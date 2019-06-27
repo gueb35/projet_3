@@ -1,0 +1,212 @@
+body{
+    background-color: beige;
+    border: 20px solid #e32118;
+    border-radius: 8px;
+}
+h1{
+    color: #e32118;
+    text-align: center;
+}
+#globale{
+    padding-bottom: 30px;
+}
+/**************zone du diaporama*********************/
+#slider{
+    height: 450px;
+    width: 900px;
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 0px 5px 5px darkgrey;
+    position: relative;
+}
+#image{
+    margin-left: 25px;
+    height: 450px;
+    width: 850px;
+    position: absolute;
+}
+#boutonGauche{
+    width: 40px;
+    height: 450px;
+    border-radius: 8px 0px 0px 8px;
+    border-right: 2px solid lightgrey;
+    background-color: darkgrey;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+}
+#flecheBoutonGauche{
+	width:2px;
+	height:1px;
+	border:1px solid lightgrey;
+	border-color:transparent lightgrey transparent transparent;
+	border-width:20px;
+    position: absolute;
+    margin-left: -12.5px;
+	transform: translateY(475%);
+}
+#boutonDroite{
+    width: 40px;
+    height: 450px;
+    border-radius: 0px 8px 8px 0px;
+    border-left: 2px solid lightgrey;
+    background-color: darkgrey;
+    position: absolute;
+    right: 0;   
+    cursor: pointer;
+}
+.flecheBoutonDroite{
+	width:2px;
+	height:1px;
+	border:1px solid lightgrey;
+	border-color:transparent transparent transparent lightgrey;
+	border-width:20px;
+    position: absolute;
+    justify-content: center;
+    margin-left: 12.5px;
+	transform: translateY(475%);
+}
+#texte_diaporama{
+    position: absolute;
+    margin: auto;
+    padding: 8px;
+    width: 802px;
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+    text-align: center;
+    bottom: 0px;
+    color: black;
+    font-weight: bold;
+    background-color: darkgrey;
+    border-top: 2px solid lightgrey;
+}
+/**********emplacement comprenant la map et le canvas***************/
+#mapCanvas{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 1200px;
+    height: 500px;
+    margin-top: 30px;
+}
+#map{
+    height: 500px;
+    width: 1200px;
+    border: 2px solid lightgrey;
+    border-radius: 5px, 0px, 0px, 5px;
+}
+/********************formulaire de réservation***********************/
+#formulaires{
+    margin-top: 7px;
+    margin-left: 0;
+    display: none;
+    position: relative;
+    z-index: 2;
+}
+
+#formReservation{
+    height: 493px;
+    border: 2px solid lightgrey;
+    background-color:beige; 
+    width: 250px;
+}
+#titre{
+    position: absolute;
+    top:0;
+    margin-left: 10px;
+    transform: translateY(-130%);
+    background-color: beige;
+}
+
+#paraAddress{
+    top: 0;
+    margin-left: 10px;
+    color: black;
+}
+#paraNbreVelo{
+    color: black;
+}
+#paraVeloDispo{
+    width: 240px;
+    color: black;
+}
+#boutonReserver{
+    margin-left: 70px;
+    margin-top: 10px;
+    box-shadow: 0px 5px 5px darkgrey;
+}
+
+/******************formulaire de signature***************/
+#divCanvas{
+    height: 252px;
+}
+#canvas{
+    border:  2px solid lightgrey;
+    background-color: darkgrey;
+}
+#titre2{
+    text-align: center;
+    color: black;
+    transform: translateY(-1200%);
+}
+#boutonValider{
+    margin-left: 67px;
+    color: black;
+    transform: translateY(-440%);
+    box-shadow: 0px 5px 5px darkgrey;
+}
+#boutonEffacer{
+    color: black;
+    transform: translateY(-440%);
+    box-shadow: 0px 5px 5px darkgrey;   
+}
+#boutonAnnuler{
+    color: black;
+    margin-left: 42px;
+    transform: translateY(-150%);
+    box-shadow: 0px 5px 5px darkgrey; 
+}
+/********************compteur***************************/
+#compteur{
+    color: black;
+}
+/*********************footer****************************/
+#footer{
+    width: 1196px;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid lightgrey;
+    border-top: transparent;
+    padding-top: 4px;
+    margin-top: -12px;
+    background-color:darkgrey;
+    border-radius: 0px 0px 8px 8px; 
+    color: black;
+    /* z-index: 1; */
+}
+#textReservation{
+    color: black;
+}
+/***********version ipad pro******************/
+@media all and (min-width: 769px) and (max-width: 1024px){
+    #mapCanvas{
+        width: 900px;
+    }
+    #footer{
+        width: 900px;
+    }
+} 
+/***********version pad pro******************/
+@media all and (min-width: 481px) and (max-width: 768px){
+    #mapCanvas{
+        width: 650px;
+    }
+    #footer{
+        width: 650px;
+    }
+}                 

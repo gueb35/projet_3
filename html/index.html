@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Vélo Lyon</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <div id="globale">
+        <h1>Vélo'v.<br>Ca file en ville!!</h1>
+        <div id="slider-conteneur">
+            <div id="slider">
+                <div id="boutonGauche">
+                    <div id="flecheBoutonGauche"></div>
+                </div>
+                    <div id="conteneur_image">
+                        <img id="image" src="../images/photodiaporama1.jpg" alt="Image 1 Vélo'V">
+                        <div id="texte_diaporama">
+                            <p></p>
+                        </div>
+                    </div>
+                <div id="boutonDroite">
+                    <div class="flecheBoutonDroite"></div>
+                </div>
+            </div>
+        </div>
+        <div id="mapCanvas">
+            <div id="map">
+            </div>
+            <div id="formulaires">
+                <div id="formReservation"></div>
+                <h3 id="titre">Détails de la station :</h3>
+                <div id="divCanvas">
+                    <canvas id="canvas" width="250" height="248"></canvas>
+                    <h3 id="titre2"></h3>
+                    <input id="boutonValider">
+                    <input id="boutonEffacer">
+                    <input id="boutonAnnuler">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p id="footer"></p>
+        </footer>
+    </div>                                
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWZY4wrhaBgenM_t79GTQva2cCcUG3YOM&callback=MaMap.initMap" async defer></script>
+        <script src="../js/map.js"></script><!--map-->
+        <script src="../js/diaporama.js"></script><!--slider-->
+        <script src="../js/compteur.js"></script>
+        <script src="../js/signature.js"></script><!--canvas-->
+</body>
+
+</html>
